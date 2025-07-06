@@ -432,14 +432,16 @@
           vertical-align: middle;
           opacity: 1;
           visibility: visible;
-          cursor: pointer;
-          appearance: checkbox;
+          appearance: auto;
+          border: 1px solid #ccc;
+          background-color: #fff;
         }
 
         label[for="form_checkbox"] {
-            display: inline-block;
-            vertical-align: middle;
-            cursor: pointer;
+          display: inline-block;
+          vertical-align: middle;
+          cursor: pointer;
+          margin-left: 0.25em;
         }
 
 		input[type="text"],
