@@ -143,24 +143,27 @@
 							<p>Have a question or project in mind? Send me a message. <br> I would be happy to discuss how I can contribute as a data analyst.</p>
 							<form action="https://formspree.io/f/mzzgqylg" method="POST">
 								<div class="row">
-									<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" /></div>
-									<div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email" /></div>
+									<div class="col-6 col-12-mobile">
+                                        <input type="text" name="name" required placeholder="Name" minlength="5" oninvalid "this.setCustomValidity('Name is required.')" oninput="this.setCustomValidity('')"/>
+                                    </div>
+									<div class="col-6 col-12-mobile">
+                                        <input type="email" name="email" required placeholder="Email" oninvalid="this.setCustomValidity('Please enter a valid email address.')"oninput="this.setCustomValidity('')"/>
+                                    </div>
 									<div class="col-12">
-										<textarea name="message" placeholder="Message"></textarea>
+										<textarea name="message" required placeholder="Message" oninvalid="this.setCustomValidity('Message cannot be empty.')" oninput="this.setCustomValidity('')"></textarea>
 									</div>
 									<div class="col-12">
                                         <p>
                                             <strong>Privacy Notice:</strong><br>
                                             Any personal information you submit through this form will be securely processed by
                                             <a href="https://formspree.io/">Formspree</a>. <br>You can read more about how your data is managed in their
-                                            <a href="https://formspree.io/legal/privacy-policy/">Privacy Policy</a>.
+                                            <a href="https://formspree.io/legal/privacy-policy/">privacy policy</a>.
                                         </p>
                                         <div style="display: flex; justify-content: center; align-items: center;">
-						<!-- Comment out the checkbox -->
-                                            <!--<input type="checkbox" id="form_checkbox" name="consent" required>
+                                            <input type="checkbox" id="form_checkbox" name="consent" required>
                                             <label for="form_checkbox">
                                                 I consent to the secure handling of my personal information.                                
-                                            </label>-->
+                                            </label>
                                         </div>
                                         <div style="text-align: center; margin-top: 20px;">
                                             <input type="submit" value="Send Message"/>
