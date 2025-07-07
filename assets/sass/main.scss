@@ -94,6 +94,20 @@
 		appearance: none;
 	}
 
+        input[type="checkbox"] {
+          display: inline-block;
+	  border: 2px solid red;
+          width: 1.2em;
+          height: 1.2em;
+          margin-right: 0.5em;
+          vertical-align: middle;
+          opacity: 1;
+          visibility: visible;
+          appearance: auto;
+          border: 1px solid #ccc;
+          background-color: #fff;
+        }
+
 /* Basic */
 
 	// Set box model to border-box.
@@ -389,20 +403,6 @@
 			border: 0;
 		}
 	}
-    
-        input[type="checkbox"] {
-          display: inline-block;
-	  border: 2px solid red;
-          width: 1.2em;
-          height: 1.2em;
-          margin-right: 0.5em;
-          vertical-align: middle;
-          opacity: 1;
-          visibility: visible;
-          appearance: auto;
-          border: 1px solid #ccc;
-          background-color: #fff;
-        }
 
 /* Form */
 
