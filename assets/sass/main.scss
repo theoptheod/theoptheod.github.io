@@ -399,6 +399,14 @@
 			cursor: pointer;
 			pointer-events: auto;
 			z-index: 1;
+			width: 1.2em;
+			height: 1.2em;
+			 display: inline-block;
+			appearance: auto;
+			 background-color: #fff;
+			 border: 1px solid #ccc;
+			vertical-align: middle;
+			margin-right: 0.5em;
 		}
 		label[for="form_checkbox"] {
 		        display: inline-block;
