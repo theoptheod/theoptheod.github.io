@@ -389,6 +389,19 @@
 			border: 0;
 		}
 	}
+    
+        input[type="checkbox"] {
+          display: inline-block;
+          width: 1.2em;
+          height: 1.2em;
+          margin-right: 0.5em;
+          vertical-align: middle;
+          opacity: 1;
+          visibility: visible;
+          appearance: auto;
+          border: 1px solid #ccc;
+          background-color: #fff;
+        }
 
 /* Form */
 
@@ -424,18 +437,7 @@
 			}
 		}
         
-        input[type="checkbox"] {
-          display: inline-block;
-          width: 1.2em;
-          height: 1.2em;
-          margin-right: 0.5em;
-          vertical-align: middle;
-          opacity: 1;
-          visibility: visible;
-          appearance: auto;
-          border: 1px solid #ccc;
-          background-color: #fff;
-        }
+
 
         label[for="form_checkbox"] {
           display: inline-block;
