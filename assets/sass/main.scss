@@ -396,16 +396,21 @@
 		input[type="email"],
 		input[type="password"],
 		input[type="checkbox"] {
-			display: inline-block;
 			width: 1.2em;
-			height: 1.2em;
-			margin-right: 0.5em;
-			vertical-align: middle;
-			background-color: #fff;
-			border: 1px solid #ccc;
-			appearance: auto;
-			opacity: 1;
-			visibility: visible;
+		        height: 1.2em;
+		        display: inline-block;
+		        background-color: #fff;
+		        border: 1px solid #ccc;
+		        vertical-align: middle;
+		        appearance: auto;
+		        margin-right: 0.5em;
+		}
+		
+		label[for="form_checkbox"] {
+		        display: inline-block;
+		        vertical-align: middle;
+		        cursor: pointer;
+		        margin-left: 0.25em;
 		}
 		select,
 		textarea {
