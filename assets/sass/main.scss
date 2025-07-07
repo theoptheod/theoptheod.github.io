@@ -405,7 +405,16 @@
 		        appearance: auto;
 		        margin-right: 0.5em;
 		}
-		
+		input#form_checkbox {
+			width: 1.2em !important;
+			height: 1.2em !important;
+			border: 1px solid #ccc !important;
+			background-color: #fff !important;
+			appearance: auto !important;
+			display: inline-block !important;
+			vertical-align: middle;
+			margin-right: 0.5em;
+		}
 		label[for="form_checkbox"] {
 		        display: inline-block;
 		        vertical-align: middle;
