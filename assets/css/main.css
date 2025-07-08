@@ -1844,22 +1844,6 @@ input, select, textarea {
 	form input[type="text"],
 	form input[type="email"],
 	form input[type="password"],
-	input#form_checkbox[type="checkbox"] {
-		appearance: auto;
-		-webkit-appearance: checkbox;
-		width: 20px;
-		height: 20px;
-		cursor: pointer;
-		background-color: #fff;
-		border: 1px solid #ccc;
-		vertical-align: middle;
-		margin-right: 0.5em;
-	}
-	label[for="form_checkbox"] {
-		display: inline-flex;
-		align-items: center;
-		gap: 0.5em;
-	}
 	form select,
 	form textarea {
 		position: relative;
@@ -1898,6 +1882,37 @@ input, select, textarea {
 
 	form textarea {
 		min-height: 14em;
+	}
+
+	input[type="checkbox"] {
+		width: 20px;
+		height: 20px;
+		border: 1px solid #ccc;
+		appearance: auto;
+		cursor: pointer;
+		margin-right: 0.5em;
+		vertical-align: middle;
+		background-color: #fff;
+  	}
+		
+  	label {
+		display: block;
+		text-align: left;
+		margin-bottom: 0.5em;
+
+		&[for="form_checkbox"] {
+			display: inline-flex;
+			align-items: center;
+			gap: 0.5em;
+			justify-content: center;
+			margin-top: 1em;
+		}
+	}
+		
+	.form-consent {
+		display: flex;
+		justify-content: center;
+		margin-top: 1.5em;
 	}
 
 	form ::-webkit-input-placeholder {
