@@ -396,26 +396,23 @@
 		input[type="email"],
 		input[type="password"],
 		input#form_checkbox[type="checkbox"] {
+			appearance: auto;
+			-webkit-appearance: checkbox;
 			width: 20px;
 			height: 20px;
-			display: inline-block;
+			cursor: pointer;
 			background-color: #fff;
 			border: 1px solid #ccc;
 			vertical-align: middle;
 			margin-right: 0.5em;
-			appearance: auto;
-			position: relative;
-			z-index: 2;
-			outline: 2px solid red; // temporary debug aid
 		}
 		
 		label[for="form_checkbox"] {
-			display: flex;
+			display: inline-flex;
 			align-items: center;
 			gap: 0.5em;
-			font-weight: 400;
 		}
-		
+				
 		select,
 		textarea {
 			position: relative;
