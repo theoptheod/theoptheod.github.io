@@ -17,7 +17,7 @@ form, label, legend, table, caption, tbody,
 tfoot, thead, tr, th, td, article, aside,
 canvas, details, embed, figure, figcaption,
 footer, header, hgroup, menu, nav, output, ruby,
-section, summary, time, mark, audio, video, checkbox {
+section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -1844,6 +1844,22 @@ input, select, textarea {
 	form input[type="text"],
 	form input[type="email"],
 	form input[type="password"],
+	input#form_checkbox[type="checkbox"] {
+		appearance: auto;
+		-webkit-appearance: checkbox;
+		width: 20px;
+		height: 20px;
+		cursor: pointer;
+		background-color: #fff;
+		border: 1px solid #ccc;
+		vertical-align: middle;
+		margin-right: 0.5em;
+	}
+	label[for="form_checkbox"] {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.5em;
+	}
 	form select,
 	form textarea {
 		position: relative;
